@@ -66,4 +66,14 @@ public class Email {
     public void changePassword(String  password) {
         this.password = password;
     }
+
+    public int getMailboxCapacity() {return mailboxCapacity; }
+    public String getAlternateEmail() { return alternateEmail; }
+    public String getPassword() {return password; }
+
+    public String showInfo() {
+        return "DISPLAY NAME: " + firstName + " " + lastName +
+                "COMPANY EMAIL: " + email +
+                "MAILBOX CAPACITY: " + mailboxCapacity + "mb";
+    }
 }
